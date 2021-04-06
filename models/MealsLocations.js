@@ -1,17 +1,17 @@
 export default (sequelize, DataTypes) => {
-  const Meals = sequelize.define(
-    "Meals_Locations",
+  const Genre = sequelize.define(
+    "Genre_Locations",
     {
-      hall_id: {
+      movie_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
-      meal_id: {
+      genre_id: {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
     },
     { freezeTableName: true, timestamps: false }
   );
-  return Meals;
+  return Genre;
 };
